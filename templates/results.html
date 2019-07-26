@@ -5,13 +5,15 @@
     <title>Results</title>
 </head>
 <body>
+    Image being Tested:
+    <img src="static/test/test.png" height="150" width="150"/>
     {% if results %}
         <table>
             <tbody>
             {% for img_name in results %}
                 <tr>
                     <td>Its {{ img_name }}</td>
-                    <td><img src="static/{{ img_name }}" alt="{{ img_name }}"></td>
+                    <td><img src="static/store/{{ img_name }}" alt="{{ img_name }}" height="150" width="150"></td>
                 </tr>
             {% endfor %}
             </tbody>
